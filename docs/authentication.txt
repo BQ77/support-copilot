@@ -1,0 +1,11 @@
+All Acme API requests require authentication via an API key. Keys are bearer tokens passed in the Authorization header of every request.
+
+To create an API key, log into the dashboard and navigate to Settings then API Keys. Click Create New Key, give it a descriptive name, and copy the key immediately. The key is only shown once for security reasons.
+
+API keys begin with the prefix acm_live_ for production keys and acm_test_ for sandbox keys. Test keys do not consume your quota and return mock data, useful for local development.
+
+If you suspect a key has been leaked, rotate it immediately from the dashboard. Click Revoke next to the key to disable it instantly. All in-flight requests with that key will return 401 Unauthorized.
+
+For team accounts, you can scope keys to specific projects or environments. Project-scoped keys can only access resources in that project. Environment scoping lets you separate staging and production credentials.
+
+We recommend rotating keys every 90 days as a security best practice. The dashboard shows the last-used timestamp for every key.

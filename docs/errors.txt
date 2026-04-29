@@ -1,0 +1,15 @@
+Acme API uses standard HTTP status codes to indicate success or failure of a request.
+
+200 OK indicates the request succeeded. The response body contains the result.
+
+400 Bad Request means the request was malformed. Common causes are missing required fields, invalid JSON syntax, or parameters outside their valid range. The response body includes a details field explaining what went wrong.
+
+401 Unauthorized means your API key is invalid, revoked, or missing. Check that you are sending the Authorization header correctly and that your key has not been rotated.
+
+403 Forbidden means your API key is valid but does not have permission for the requested resource. This usually happens when a project-scoped key tries to access a different project.
+
+429 Too Many Requests means you have exceeded your rate limit. See the rate limits documentation for details.
+
+500 Internal Server Error indicates a problem on our side. These are rare and our SDK retries automatically. If you see persistent 500 errors, check status.acme.com for ongoing incidents.
+
+503 Service Unavailable means the API is temporarily down for maintenance. Retry after the duration in the Retry-After header.

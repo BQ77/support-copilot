@@ -1,0 +1,11 @@
+Acme API enforces rate limits to ensure fair access for all users. Limits are applied per API key.
+
+Free tier accounts are limited to 100 requests per day and 10 requests per minute. Paid plans start at 10,000 requests per day with no per-minute cap. Enterprise customers can request custom limits.
+
+When you exceed your rate limit, the API returns a 429 Too Many Requests response with a Retry-After header indicating how many seconds to wait before retrying. Our SDKs handle this automatically with exponential backoff.
+
+Each response includes three rate limit headers: X-RateLimit-Limit shows your total quota, X-RateLimit-Remaining shows how many requests you have left in the window, and X-RateLimit-Reset shows the unix timestamp when the window resets.
+
+To avoid hitting limits, batch requests where possible. The /v1/batch endpoint accepts up to 100 prompts in a single request and counts as one against your quota.
+
+If you need a higher limit for a specific use case, email sales@acme.com with details about your traffic pattern. We can usually approve increases within one business day.

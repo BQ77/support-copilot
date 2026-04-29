@@ -1,0 +1,13 @@
+Acme API uses pay-as-you-go billing. You are charged per API request based on your plan and the number of tokens processed.
+
+The free tier includes 100 requests per day at no cost. The Starter plan is 29 dollars per month and includes 50,000 requests with overage at 0.001 dollars per request. The Pro plan is 199 dollars per month with 500,000 included requests. Enterprise pricing is custom.
+
+You can view current usage and projected monthly bill in the Billing section of the dashboard. Usage is updated in near real time, with a maximum delay of 5 minutes.
+
+Invoices are generated on the first of every month and emailed to the billing contact. You can also download past invoices as PDFs from the dashboard.
+
+We accept credit cards, ACH transfers for US customers, and wire transfers for Enterprise plans. To update your payment method, go to Billing then Payment Methods.
+
+If your card fails to charge, your account is moved to a grace period for 7 days. After 7 days, API access is suspended until billing is resolved. We send email reminders at 1, 3, and 6 days into the grace period.
+
+For refund requests or billing questions, contact billing@acme.com. We typically respond within one business day.

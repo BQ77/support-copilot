@@ -1,0 +1,11 @@
+Welcome to Acme API. This guide gets you from zero to your first API call in under 5 minutes.
+
+To get started, sign up for an account at acme.com/signup. After verifying your email, you will be redirected to the dashboard where you can create your first API key.
+
+Install the official SDK: pip install acme-sdk for Python or npm install @acme/sdk for Node.js. The SDK handles authentication, retries, and rate limiting automatically.
+
+Your first request looks like this in Python: from acme import Client; client = Client(api_key="your_key"); response = client.completions.create(prompt="hello"). The response object contains the generated text and metadata about token usage.
+
+For local development, we recommend storing your API key in a .env file and loading it with python-dotenv. Never commit API keys to version control.
+
+Free tier accounts get 100 requests per day. Upgrade to a paid plan in the dashboard for higher limits.
