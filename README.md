@@ -14,6 +14,8 @@
 ![Docker](https://img.shields.io/badge/container-Docker-2496ED.svg?style=flat&logo=docker&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-support--copilot.streamlit.app-6366f1?style=for-the-badge)](https://support-copilot.streamlit.app)
+
 [Architecture](#-architecture) · [Quickstart](#-quickstart) · [Demo queries](#-try-it) · [Roadmap](#-roadmap)
 
 </div>
@@ -101,7 +103,7 @@ Then open http://localhost:8501 and start chatting. Drop your own `.txt` docs in
 
 ## 🎮 Try it
 
-Live demo: **deploying to Streamlit Cloud** (URL coming)
+Live demo: **[support-copilot.streamlit.app](https://support-copilot.streamlit.app)** — try it now, no signup.
 
 Sample queries the demo handles end to end:
 
